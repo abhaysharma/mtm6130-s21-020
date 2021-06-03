@@ -45,6 +45,51 @@
         </tr>
       </tbody>
     </table>
+    <section>
+      <h3>We love to hear from you!</h3>
+      <!-- adding a form -->
+      <form action="thanks.html" method="post">
+        <div>
+          <label for="fullname">Your Name</label>
+          <input type="text" id="fullname" name="fullname" placeholder="John Doe" value="Mr.">
+        </div>
+        <div>
+          <label for="youremail">Email</label>
+          <input type="email" id="youremail" name="youremail" required>
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message"></textarea>
+        </div>
+        <div>
+          <label for="tickets">How many tickets? (sold in pairs)</label>
+          <input type="number" id="tickets" name="tickets" min="2" max="10" step="2">
+        </div>
+        <div>
+          <label for="row">Select Row</label>
+          <select id="row" name="row" required>
+            <!-- first option value is empty so they have to select one with value since the select tag is required  -->
+            <option value="">Select One</option>
+            <option value="front">Front row</option>
+            <option value="center" selected>Center row</option>
+            <option value="back">Back row</option>
+          </select>
+        </div>
+        <div>
+          <h3>How you been here before?</h3>
+          <label for="yes">Yes</label>
+          <input type="radio" id="yes" name="past" value="yes" checked>
+          <label for="no">No</label>
+          <input type="radio" id="no" name="past" value="no">
+        </div>
+        <div>
+          <h3>Policies</h3>
+          <input type="checkbox" id="policies" name="policies">
+          <label for="policies">I agree with the Terms &amp; Policies.</label>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
   </main>
   <!-- Site footer -->
   <footer>
