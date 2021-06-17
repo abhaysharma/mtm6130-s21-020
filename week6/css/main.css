@@ -44,6 +44,18 @@ nav ul a {
   background: orange url(../images/bread.jpg) no-repeat center center;
   background-size: cover;
   color: white;
+
+  font-size: 1.25rem;
+  /* 1.25 x 16 = 20px */
+
+  /* 1em = 20px */
+  padding: 1em;
+
+  /* viewport based units vh and vw */
+  /* height: 100vh; */
+
+  /* % based on parent container width */
+  width: 50%;
 }
 
 /* Selecting elements with class value */
