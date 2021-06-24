@@ -5,6 +5,28 @@ body {
   background-image: url(../images/white_brick_wall.png);
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+/* Display and Box-sizing */
+
+nav ul li {
+  display: inline-block;
+  width: 49%;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+nav ul a {
+  display: block;
+}
+
 /* 
   This is a CSS Comment
   Shortcut for adding then comment Command + / or Control + /
@@ -37,8 +59,16 @@ nav ul a {
   text-decoration: none;
 }
 
+.orange-link.large-text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
 /* Selecting element with id value */
 #treatofweek {
+  position: relative;
+
   /* color image repeat position-x position-y / size */
 
   background: orange url(../images/bread.jpg) no-repeat center center;
@@ -49,7 +79,7 @@ nav ul a {
   /* 1.25 x 16 = 20px */
 
   /* 1em = 20px */
-  padding: 1em;
+  padding: 1em 1em 5em 1em;
 
   /* viewport based units vh and vw */
   /* height: 100vh; */
@@ -63,6 +93,30 @@ nav ul a {
   background-color: darkslategrey;
   color: orange;
   text-decoration: none;
+  padding: 1.5em;
+  display: block;
+  width: 300px;
+}
+
+/* Float */
+
+article,
+aside {
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid black;
+  padding: 1.5em;
+  box-sizing: border-box;
+  float: left;
+}
+
+aside {
+  width: 20%;
+}
+
+/* clear the float for the sections */
+section {
+  clear: both;
 }
 
 .large-text {
@@ -181,4 +235,21 @@ body footer {
 /* 0011 */
 footer.site-footer {
   background-color: teal;
+}
+
+
+/* CSS Box Model */
+article section h3 {
+  background-color: cornflowerblue;
+  padding: 1em;
+  width: 50%;
+}
+
+section p {
+  width: 50%;
+  /* top-bottom left-right */
+  padding: 1em .5em;
+  /* top right bottom left */
+  margin: -2em 2em 2em 2em;
+  border-bottom: 2px dashed black;
 }
